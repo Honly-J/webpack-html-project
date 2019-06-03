@@ -7,7 +7,8 @@ let env = process.env.NODE_ENV == "development" ? "development" : "production";
 module.exports = {
   mode: env,
   entry:{
-    'statics/js/page.js':'./src/statics/js/page.js'
+    'statics/js/page.js':'./src/statics/js/page.js',
+    'statics/js/detail.js':'./src/statics/js/detail.js'
   },
   output: {
     path: path.resolve(__dirname,'dist'),
