@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url(/statics/imgs/4b35c4308ffda8662fe66d4f251c5a96.png) no-repeat;
+  min-height: 300px;
+  color: #000; }
+  body h3 {
+    color: red;
+    font-size: 28px; }
+  body div {
+    background: url(/statics/imgs/4b35c4308ffda8662fe66d4f251c5a96.png) no-repeat;
+    height: 400px; }
+

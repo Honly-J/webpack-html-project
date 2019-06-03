@@ -70,6 +70,7 @@ module.exports = {
   devServer:{
     host:'localhost',   //服务器的ip地址
     port:1573,  //端口
+    inline: true,//实时刷新
     open:true,  //自动打开页面
     hot: true,
     // hotOnly:true

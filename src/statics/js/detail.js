@@ -1,1 +1,1 @@
-console.log('detail.js')
+console.log('detail.jsssd')
