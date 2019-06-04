@@ -1,3 +1,4 @@
-export  function test(){
- return 'test..223223..'
+
+export  default  function(){
+  return 'test..223223..'
 }

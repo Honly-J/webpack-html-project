@@ -26,7 +26,16 @@ module.exports = {
               publicPaht: './'
             }
           },
-          {loader: 'css-loader'}
+          {
+            loader: 'css-loader'
+          },
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 75,
+              remPrecision: 8
+            }
+          }
         ]
       },
       {
@@ -34,6 +43,13 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
+          {
+            loader: 'px2rem-loader',
+            options: {
+              remUnit: 75,
+              remPrecision: 8
+            }
+          },
           "sass-loader"
         ]
       },
@@ -55,6 +71,11 @@ module.exports = {
             loader: 'html-loader'
         }
       },
+      {
+        test: /\.js$/,
+        exclude: '/node_modules/',
+        loader: 'babel-loader'
+      }
     ]
   },
   plugins:[
@@ -69,7 +90,7 @@ module.exports = {
   ],
   devServer:{
     host:'localhost',   //服务器的ip地址
-    port:1573,  //端口
+    port:8888,  //端口
     inline: true,//实时刷新
     open:true,  //自动打开页面
     hot: true,

@@ -1,9 +1,10 @@
-import '../css/reset.scss'
-import {test} from './test'
+import '../css/reset.css'
+import '../css/style.scss'
+import  test from './test'
  
 const div = document.createElement('div');
 console.log(test);
 div.innerHTML = test()
 document.body.appendChild(div)
-
-console.log("3333333")
+const a = () => '5555555'
+console.log(a())
